@@ -1,0 +1,12 @@
+Historia de usuario: #1
+Característica: Consulta de pedidos.
+Criterio de aceptación: Busca según las ID de los pedidos
+Evento: Se presion el botón de "Consultar Pedidos".
+Resultado: Mostrará el código del pedido, nombre de la persona, ID de la persona, fecha de registro del pedido y de expiración,
+ el tipo de pedido, método de pago y alimentos pedidos en el producto.
+
+Historia de usuario: #2
+Característica: Creación del pedido.
+Criterio de aceptación: Que el nombre e ID del usuario existan.
+Evento: El usuario ingresa los platos, bebidas y las sugerencias que desea incluir en su pedido.  
+Resultado: Mostrará un mensaje que confirme el éxito de la transacción al presionar el botón "Submit".
