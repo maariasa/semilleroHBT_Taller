@@ -22,10 +22,10 @@ import com.hbt.semillero.servicios.interfaces.IConsultasEjbLocal;
 
 @Path("/ConsultasRest")
 public class ConsultasRest {
-	
+
 	@EJB
 	private IConsultasEjbLocal consultaEJB;
-	
+
 	/**
 	 * Consulta encargada de consultar las bebidas disponibles
 	 */
@@ -34,9 +34,22 @@ public class ConsultasRest {
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<BebidaDTO> consultarBebidas(){
 		return consultaEJB.consultarBebidasExistentes();
-		
 	}
-	
-	
-	
+
+	@GET
+	@Path("/consultarPlatos")
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<PlatoDTO> consultarPlatos(){
+		return consultaEJB.consultarPlatosPorNombre();
+	}
+
+	@GET
+	@Path("/consultarPedidos")
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<PedidosDTO> consultarPedidos(){
+		return consultaEJB.consultarPedidosExistentes();
+	}
+
+
+
 }

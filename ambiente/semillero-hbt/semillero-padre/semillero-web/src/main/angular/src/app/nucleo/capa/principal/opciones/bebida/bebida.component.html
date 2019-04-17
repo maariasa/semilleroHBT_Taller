@@ -1,0 +1,8 @@
+<h2>Bebidas disponibles: </h2>
+<ul class="platos">
+  <li *ngFor="let bebida of bebidas" (click)="onSelect(bebida)">
+    <span class="badge">{{bebida.idBebida}}</span> {{bebida.nombreBebida}
+  </li>
+</ul>
+
+<app-bebida-detalle [bebida]="bebidaSeleccionada"></app-bebida-detalle>

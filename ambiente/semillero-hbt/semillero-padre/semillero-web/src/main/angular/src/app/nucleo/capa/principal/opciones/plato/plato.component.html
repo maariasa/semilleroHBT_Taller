@@ -1,0 +1,8 @@
+<h2>Platos disponibles: </h2>
+<ul class="platos">
+  <li *ngFor="let plato of platos" (click)="onSelect(plato)">
+    <span class="badge">{{plato.idPlato}}</span> {{plato.nombrePlato}}
+  </li>
+</ul>
+
+<app-plato-detalle [plato]="platoSeleccionado"></app-plato-detalle>

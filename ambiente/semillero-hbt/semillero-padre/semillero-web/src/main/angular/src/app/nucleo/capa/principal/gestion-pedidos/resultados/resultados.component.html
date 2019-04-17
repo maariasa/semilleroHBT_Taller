@@ -1,0 +1,17 @@
+
+<table *ngIf="pedidos">
+	<tr>
+		<th>ID</th>
+		<th>Tipo</th>
+		<th>Medio de pago</th>
+		<th>Fecha Creacion</th>
+
+	</tr>
+	<tr *ngFor="let pedido of pedidos">
+		<td>{{pedido.idPedido}}</td>
+		<td>{{pedido.tipoPedido}}</td>
+		<td>{{pedido.medioPago}}</td>
+		<td>{{pedido.fechaCreacion}}</td>
+		<td>{{vehiculo.color}}</td>
+	</tr>
+</table>
